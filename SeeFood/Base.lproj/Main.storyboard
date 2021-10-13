@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Identifier-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeeFood" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,12 @@
                             <constraint firstAttribute="bottom" secondItem="fUL-Pt-grL" secondAttribute="bottom" id="LAJ-27-1Ri"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Owq-VE-acu">
+                    <navigationItem key="navigationItem" title="Identifier" id="Owq-VE-acu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="x19-h8-Nv8">
+                            <connections>
+                                <action selector="filesButtonPressed:" destination="BYZ-38-t0r" id="ReE-bR-ojo"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="M9M-4e-vbe">
                             <connections>
                                 <action selector="cameraButtonPressed:" destination="BYZ-38-t0r" id="lcM-lz-rQR"/>

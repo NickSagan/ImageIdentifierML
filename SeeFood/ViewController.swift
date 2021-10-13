@@ -19,7 +19,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
+        //imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
         
     }
@@ -33,6 +33,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             guard let ciImage = CIImage(image: userPickedImage) else {
                 fatalError("Can't convert UIImage into CIImage")
             }
+            
+            detect(image: ciImage)
 
         }
         
@@ -47,15 +49,36 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
         let request = VNCoreMLRequest(model: model) { (request, error) in
-            <#code#>
+            guard let results = request.results as? [VNClassificationObservation] else {
+                fatalError("Model failed to process image")
+            }
+            
+            let result = results.first?.identifier
+            self.navigationItem.title = result
+        }
+        let handler = VNImageRequestHandler(ciImage: image)
+        
+        do {
+            try handler.perform([request])
+        } catch {
+            print(error)
         }
     }
 
     @IBAction func cameraButtonPressed(_ sender: UIBarButtonItem) {
         
+        imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
         
     }
+    
+    @IBAction func filesButtonPressed(_ sender: UIBarButtonItem) {
+        
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
 
 }
 
