@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9111FBFE2716F70600F0771B /* SeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9111FBFE2716F70600F0771B /* ImageIdentifierML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageIdentifierML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9111FC012716F70600F0771B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9111FC032716F70600F0771B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9111FC052716F70600F0771B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		9111FBF52716F70600F0771B = {
 			isa = PBXGroup;
 			children = (
-				9111FC002716F70600F0771B /* SeeFood */,
+				9111FC002716F70600F0771B /* ImageIdentifierML */,
 				9111FBFF2716F70600F0771B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		9111FBFF2716F70600F0771B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9111FBFE2716F70600F0771B /* SeeFood.app */,
+				9111FBFE2716F70600F0771B /* ImageIdentifierML.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9111FC002716F70600F0771B /* SeeFood */ = {
+		9111FC002716F70600F0771B /* ImageIdentifierML */ = {
 			isa = PBXGroup;
 			children = (
 				9111FC012716F70600F0771B /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				9111FC0F2716F70D00F0771B /* Info.plist */,
 				9111FC152716F81600F0771B /* Inceptionv3.mlmodel */,
 			);
-			path = SeeFood;
+			path = ImageIdentifierML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9111FBFD2716F70600F0771B /* SeeFood */ = {
+		9111FBFD2716F70600F0771B /* ImageIdentifierML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9111FC122716F70D00F0771B /* Build configuration list for PBXNativeTarget "SeeFood" */;
+			buildConfigurationList = 9111FC122716F70D00F0771B /* Build configuration list for PBXNativeTarget "ImageIdentifierML" */;
 			buildPhases = (
 				9111FBFA2716F70600F0771B /* Sources */,
 				9111FBFB2716F70600F0771B /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = SeeFood;
+			name = ImageIdentifierML;
 			productName = SeeFood;
-			productReference = 9111FBFE2716F70600F0771B /* SeeFood.app */;
+			productReference = 9111FBFE2716F70600F0771B /* ImageIdentifierML.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9111FBF92716F70600F0771B /* Build configuration list for PBXProject "SeeFood" */;
+			buildConfigurationList = 9111FBF92716F70600F0771B /* Build configuration list for PBXProject "ImageIdentifierML" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9111FBFD2716F70600F0771B /* SeeFood */,
+				9111FBFD2716F70600F0771B /* ImageIdentifierML */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NickSagan.SeeFood;
+				PRODUCT_BUNDLE_IDENTIFIER = NickSagan.ImageIdentifierML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NickSagan.SeeFood;
+				PRODUCT_BUNDLE_IDENTIFIER = NickSagan.ImageIdentifierML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9111FBF92716F70600F0771B /* Build configuration list for PBXProject "SeeFood" */ = {
+		9111FBF92716F70600F0771B /* Build configuration list for PBXProject "ImageIdentifierML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9111FC102716F70D00F0771B /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9111FC122716F70D00F0771B /* Build configuration list for PBXNativeTarget "SeeFood" */ = {
+		9111FC122716F70D00F0771B /* Build configuration list for PBXNativeTarget "ImageIdentifierML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9111FC132716F70D00F0771B /* Debug */,

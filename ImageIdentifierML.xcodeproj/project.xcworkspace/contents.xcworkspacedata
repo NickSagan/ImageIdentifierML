@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/nikolai/Developer/Study/SeeFood/ImageIdentifierML.xcodeproj">
    </FileRef>
 </Workspace>

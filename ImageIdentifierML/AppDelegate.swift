@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SeeFood
+//  ImageIdentifierML
 //
 //  Created by Nick Sagan on 13.10.2021.
 //
